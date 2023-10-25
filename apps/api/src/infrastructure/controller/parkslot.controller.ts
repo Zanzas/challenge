@@ -1,9 +1,9 @@
 import { Body, Controller, HttpStatus, Post } from '@nestjs/common';
-import { CreateParkDTO } from './dto/CreatePark.dto';
-import { CreateParkSlot } from './services/CreateParkSlot.service';
+import { CreateParkDTO } from '../../dto/CreatePark.dto';
+import { CreateParkSlot } from '../../domain/services/CreateParkSlot.service';
 
 @Controller()
-export class AppController {
+export class ParkSlotController {
   constructor(private readonly createParkSlot: CreateParkSlot) {}
 
   @Post('/parks')
