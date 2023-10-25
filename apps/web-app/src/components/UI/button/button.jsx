@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-function Button({ title, color, hoverColor, onButtonClick }) {
+import './button.css'
+function Button({ title="Cliquez-moi", color="blue" , hoverColor="lightblue"}) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <button
-      className="start-button"
-      onClick={onButtonClick}
+      className="button"
       onMouseOver={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
