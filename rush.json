@@ -321,6 +321,10 @@
     {
       "packageName": "api",
       "projectFolder": "apps/api"
+    },
+    {
+      "packageName": "web-app",
+      "projectFolder": "apps/web-app"
     }
   ]
 }
