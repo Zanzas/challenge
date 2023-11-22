@@ -1,0 +1,15 @@
+.containerBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1.5em;
+  gap: 2em;
+}
+
+.filterComponent {
+  flex: 0 0 2;
+}
+
+.listingContainerComponent {
+  flex: 0 0 8;
+}

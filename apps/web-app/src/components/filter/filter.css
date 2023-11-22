@@ -1,0 +1,28 @@
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 1em;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.label {
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.containerFilter {
+  height: 375px !important;
+}

@@ -1,0 +1,43 @@
+.listingItemContainer {
+  display: flex;
+  min-width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  align-items: stretch;
+  padding: 1em;
+}
+
+.detailsSection {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1em;
+}
+
+.dateRange InputComponent:first-child {
+  margin-right: 0.5rem;
+}
+
+.verticalSeparator {
+  background-color: #ddd;
+  width: 2px;
+  margin: 0 1rem;
+}
+
+.mapSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
