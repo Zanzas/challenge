@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 import "./add.css";
-import InputComponent from "../tools/input.jsx/input";
+import InputComponent from "../tools/input/input";
 import ButtonComponent from "../tools/button/button";
-import { postParkSlot } from "../../service/createService";
+import { postCreateParkService } from "../../services/postCreateParkService";
 
 import iconLocation from "../../assets/iconLocation.svg";
 import iconCalendar from "../../assets/iconCalendar.svg";
@@ -25,7 +25,7 @@ const AddComponent = () => {
       price,
     };
     try {
-      await postParkSlot(data);
+      await postCreateParkService(data);
       setModalIsOpen(false);
     } catch (error) {
       console.error("Erreur lors de l'envoi des données:", error);
@@ -43,39 +43,39 @@ const AddComponent = () => {
         <div className="container addContainer">
           <h2 className="title">Ajouté une annonce</h2>
           <div className="item">
-            <img src={iconLocation} alt="Location" className="icon" />
+            <img src={iconLocation} alt="address" className="icon" />
             <InputComponent
-              initialValue={address}
-              type="text"
-              onChange={(e) => setAddress(e.target.value)}
+              value={address}
+              type="string"
+              onChange={(value) => setAddress(value)}
             />
           </div>
 
           <div className="item">
             <img src={iconCalendar} alt="Calendar" className="icon" />
             <InputComponent
-              initialValue={startDate}
-              type="text"
-              onChange={(e) => setStartDate(e.target.value)}
+              value={startDate}
+              type="string"
+              onChange={(value) => setStartDate(value)}
             />
           </div>
 
           <div className="item">
             <img src={iconCalendar} alt="Calendar" className="icon" />
             <InputComponent
-              initialValue={endDate}
-              type="text"
-              onChange={(e) => setEndDate(e.target.value)}
+              value={endDate}
+              type="string"
+              onChange={(value) => setEndDate(value)}
             />
           </div>
 
           <div className="item">
             <img src={iconPrice} alt="Price" className="icon" />
             <InputComponent
-              initialValue="{price}"
+              value={price}
               type="number"
               currency={true}
-              onChange={(e) => setPrice(e.target.value)}
+              onChange={(value) => setPrice(value)}
             />
           </div>
           <div className="buttonSection">
