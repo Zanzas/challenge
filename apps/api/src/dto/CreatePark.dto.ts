@@ -3,9 +3,15 @@ import { IsNotEmpty, IsString } from 'class-validator';
 export class CreateParkDTO {
   @IsNotEmpty()
   @IsString()
-  firstName: string;
+  address: string;
 
   @IsNotEmpty()
-  @IsString()
-  lastName: string;
+  startDate: Date;
+
+  @IsNotEmpty()
+  endDate: Date;
+
+  @IsNotEmpty()
+  price: number;
+
 }

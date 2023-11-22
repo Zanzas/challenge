@@ -5,7 +5,7 @@ import { ParkSlotModule } from './parkslot.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/parkzen'),
+    MongooseModule.forRoot('mongodb://localhost/park'),
     ParkSlotModule,
   ],
   controllers: [AppController],
