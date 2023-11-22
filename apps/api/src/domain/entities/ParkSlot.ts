@@ -3,13 +3,17 @@ import { v4 as uuid } from 'uuid';
 
 export class ParkSlot {
   private id: string;
-  private firstName: string;
-  private createdAt: Date;
+  private address: string;
+  private startDate : Date;
+  private endDate: Date;
+  private price : number;
 
   private constructor(payload: CreateParkDTO) {
     this.id = uuid();
-    this.firstName = payload.firstName;
-    this.createdAt = new Date();
+    this.address = payload.address;
+    this.startDate = payload.startDate;
+    this.endDate = payload.endDate;
+    this.price = payload.price;
   }
 
   public static createByUser(payload: CreateParkDTO) {

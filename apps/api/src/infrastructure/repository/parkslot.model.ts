@@ -9,10 +9,16 @@ export class ParkSlot {
   id: string;
 
   @Prop({ required: 'true' })
-  firstName: string;
+  address: string;
 
   @Prop({ required: 'true' })
-  createdAt: Date;
+  startDate: Date;
+  
+  @Prop({ required: 'true' })
+  endDate: Date;
+
+  @Prop({ required: 'true' })
+  price: number;
 }
 
 export const ParkSlotModelName = ParkSlot.name;
