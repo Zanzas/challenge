@@ -6,7 +6,7 @@ import { CreateParkSlot } from '../../domain/services/CreateParkSlot.service';
 export class ParkSlotController {
   constructor(private readonly createParkSlot: CreateParkSlot) {}
 
-  @Post('/parks')
+  @Post('/createPark')
   createPark(@Body() body: CreateParkDTO) {
     this.createParkSlot.handle(body);
     return HttpStatus.NO_CONTENT;
