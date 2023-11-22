@@ -13,7 +13,7 @@ export class ParkSlot {
 
   @Prop({ required: 'true' })
   startDate: Date;
-  
+
   @Prop({ required: 'true' })
   endDate: Date;
 
