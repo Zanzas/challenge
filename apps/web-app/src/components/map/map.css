@@ -1,0 +1,11 @@
+.mapSection {
+  flex-grow: 1;
+  height: 300px;
+}
+
+.mapContainer {
+  height: 300px;
+  width: 300px;
+  border-radius: 0.5em;
+  z-index: 0;
+}
