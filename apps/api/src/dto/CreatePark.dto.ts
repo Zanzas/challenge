@@ -13,5 +13,4 @@ export class CreateParkDTO {
 
   @IsNotEmpty()
   price: number;
-
 }

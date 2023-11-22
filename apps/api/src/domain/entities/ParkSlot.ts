@@ -4,9 +4,9 @@ import { v4 as uuid } from 'uuid';
 export class ParkSlot {
   private id: string;
   private address: string;
-  private startDate : Date;
+  private startDate: Date;
   private endDate: Date;
-  private price : number;
+  private price: number;
 
   private constructor(payload: CreateParkDTO) {
     this.id = uuid();
