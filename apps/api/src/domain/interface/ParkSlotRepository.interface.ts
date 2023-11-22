@@ -4,5 +4,4 @@ export const ParkSlotRepository = 'ParkSlotRepository';
 
 export interface ParkSlotRepository {
   create(parkSlot: ParkSlot): Promise<void>;
-  findAll(): Promise<ParkSlot[]>;
 }

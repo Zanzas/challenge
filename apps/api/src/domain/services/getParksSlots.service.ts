@@ -1,12 +1,13 @@
 import { Injectable } from '@nestjs/common';
-import { ParkSlotRepository } from '../interface/ParkSlotRepository.interface';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { ParkSlot } from '../entities/ParkSlot';
 
 @Injectable()
 export class GetParksSlotsService {
-  constructor(private readonly parkSlotRepository: ParkSlotRepository) {}
+  constructor(@InjectModel('ParkSlot') private readonly parkSlotModel: Model<ParkSlot>) {}
 
-  async getParksSlots(): Promise<any[]> {
-    const parks = await this.parkSlotRepository.findAll();
-    return parks;
+  async getParksSlots(): Promise<ParkSlot[]> {
+    return this.parkSlotModel.find().exec();
   }
 }
