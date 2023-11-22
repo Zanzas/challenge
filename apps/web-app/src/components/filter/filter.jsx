@@ -30,7 +30,7 @@ const FilterComponent = () => {
         <img src={iconCalendar} alt="Calendar" className="icon" />
         <InputComponent
           value={startDate}
-          type="string"
+          type="date"
           onChange={(value) => setStartDate(value)}
         />
       </div>
@@ -39,7 +39,7 @@ const FilterComponent = () => {
         <img src={iconCalendar} alt="Calendar" className="icon" />
         <InputComponent
           value={endDate}
-          type="string"
+          type="date"
           onChange={(value) => setEndDate(value)}
         />
       </div>
@@ -49,7 +49,6 @@ const FilterComponent = () => {
         <InputComponent
           value={price}
           type="number"
-          currency={true}
           onChange={(value) => setPrice(value)}
         />
       </div>

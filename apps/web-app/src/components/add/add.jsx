@@ -74,7 +74,6 @@ const AddComponent = () => {
             <InputComponent
               value={price}
               type="number"
-              currency={true}
               onChange={(value) => setPrice(value)}
             />
           </div>

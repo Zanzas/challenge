@@ -11,10 +11,8 @@ const InputComponent = ({
   const handleChange = (event) => {
     let newValue = event.target.value;
 
-    if (currency && type === "number") {
-      if (!isNaN(newValue)) {
-        newValue = parseFloat(newValue).toFixed(2);
-      }
+    if (type === "number" && !isNaN(newValue)) {
+      newValue = parseFloat(newValue);
     }
 
     onChange(newValue);
@@ -24,9 +22,7 @@ const InputComponent = ({
     return currency && type === "number" ? `${val}€` : val;
   };
 
-  return (
-    <input type={type} value={formatValue(value)} onChange={handleChange} />
-  );
+  return <input type={type} value={value} onChange={handleChange} />;
 };
 
 export default InputComponent;
