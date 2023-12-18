@@ -12,10 +12,10 @@ export class ParkSlot {
   address: string;
 
   @Prop({ required: 'true' })
-  startDate: Date;
+  startDate: string;
 
   @Prop({ required: 'true' })
-  endDate: Date;
+  endDate: string;
 
   @Prop({ required: 'true' })
   price: number;
