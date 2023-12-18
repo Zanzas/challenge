@@ -55,7 +55,7 @@ const AddComponent = () => {
             <img src={iconCalendar} alt="Calendar" className="icon" />
             <InputComponent
               value={startDate}
-              type="string"
+              type="date"
               onChange={(value) => setStartDate(value)}
             />
           </div>
@@ -64,7 +64,7 @@ const AddComponent = () => {
             <img src={iconCalendar} alt="Calendar" className="icon" />
             <InputComponent
               value={endDate}
-              type="string"
+              type="date"
               onChange={(value) => setEndDate(value)}
             />
           </div>
@@ -73,7 +73,7 @@ const AddComponent = () => {
             <img src={iconPrice} alt="Price" className="icon" />
             <InputComponent
               value={price}
-              type="number"
+              type="string"
               currency={true}
               onChange={(value) => setPrice(value)}
             />

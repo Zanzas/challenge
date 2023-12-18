@@ -19,6 +19,7 @@ specifiers:
   '@types/supertest': ^2.0.12
   '@typescript-eslint/eslint-plugin': ^6.0.0
   '@typescript-eslint/parser': ^6.0.0
+  axios: ~1.6.2
   class-transformer: ~0.5.1
   class-validator: ~0.14.0
   eslint: ^8.42.0
@@ -65,6 +66,7 @@ dependencies:
   '@types/supertest': 2.0.13
   '@typescript-eslint/eslint-plugin': 6.7.3_7cc73ba22a4fa4c0c80f28357a7c5d44
   '@typescript-eslint/parser': 6.7.3_eslint@8.50.0+typescript@5.2.2
+  axios: 1.6.2
   class-transformer: 0.5.1
   class-validator: 0.14.0
   eslint: 8.50.0
@@ -2684,8 +2686,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@remix-run/router/1.10.0:
-    resolution: {integrity: sha512-Lm+fYpMfZoEucJ7cMxgt4dYt8jLfbpwRCzAjm9UgSLOkmlqo9gupxt6YX3DY0Fk155NT9l17d/ydi+964uS9Lw==}
+  /@remix-run/router/1.13.0:
+    resolution: {integrity: sha512-5dMOnVnefRsl4uRnAdoWjtVTdh8e6aZqgM4puy9nmEADH72ck+uXwzpJLEKE9Q6F8ZljNewLgmTfkxUrBdv4WA==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -10677,26 +10679,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router-dom/6.17.0_react-dom@18.2.0+react@18.2.0:
-    resolution: {integrity: sha512-qWHkkbXQX+6li0COUUPKAUkxjNNqPJuiBd27dVwQGDNsuFBdMbrS6UZ0CLYc4CsbdLYTckn4oB4tGDuPZpPhaQ==}
+  /react-router-dom/6.20.0_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-CbcKjEyiSVpA6UtCHOIYLUYn/UJfwzp55va4yEfpk7JBN3GPqWfHrdLkAvNCcpXr8QoihcDMuk0dzWZxtlB/mQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.10.0
+      '@remix-run/router': 1.13.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-router: 6.17.0_react@18.2.0
+      react-router: 6.20.0_react@18.2.0
     dev: false
 
-  /react-router/6.17.0_react@18.2.0:
-    resolution: {integrity: sha512-YJR3OTJzi3zhqeJYADHANCGPUu9J+6fT5GLv82UWRGSxu6oJYCKVmxUcaBQuGm9udpWmPsvpme/CdHumqgsoaA==}
+  /react-router/6.20.0_react@18.2.0:
+    resolution: {integrity: sha512-pVvzsSsgUxxtuNfTHC4IxjATs10UaAtvLGVSA1tbUE4GDaOSU1Esu2xF5nWLz7KPiMuW8BJWuPFdlGYJ7/rW0w==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.10.0
+      '@remix-run/router': 1.13.0
       react: 18.2.0
     dev: false
 
@@ -13176,7 +13178,7 @@ packages:
     dev: false
 
   file:projects/web-app.tgz_ts-node@10.9.1+typescript@5.2.2:
-    resolution: {integrity: sha512-hEeRJyILji1XKyYuzdLNbaTb1mUc1Vj+06CG3XwPOzEtPcEYFDAtHXMJi99M1Mwtmmm1sTjZ21Ovg//DWgd+RQ==, tarball: file:projects/web-app.tgz}
+    resolution: {integrity: sha512-VvpAmw3h/a8LZF2wiYR16pfFSwVVHjACZG/0gNNYN1w8eTfy+NXm1LoH2CpZnSBcGWNhcbsPpJiiKIrCJbJFOQ==, tarball: file:projects/web-app.tgz}
     id: file:projects/web-app.tgz
     name: '@rush-temp/web-app'
     version: 0.0.0
@@ -13191,7 +13193,7 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-leaflet: 4.2.1_7fc9dd2c07ef6ecc62d5f9764fbad166
       react-modal: 3.16.1_react-dom@18.2.0+react@18.2.0
-      react-router-dom: 6.17.0_react-dom@18.2.0+react@18.2.0
+      react-router-dom: 6.20.0_react-dom@18.2.0+react@18.2.0
       react-scripts: 5.0.1_edae949ff0192bc6052ea0888eb9b8ee
       web-vitals: 2.1.4
     transitivePeerDependencies:
