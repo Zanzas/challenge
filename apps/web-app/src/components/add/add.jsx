@@ -75,6 +75,7 @@ const AddComponent = () => {
               value={price}
               type="string"
               currency={true}
+              type="number"
               onChange={(value) => setPrice(value)}
             />
           </div>

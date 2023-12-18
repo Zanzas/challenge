@@ -9,7 +9,7 @@ export class GetParksSlots implements ParkSlotRepository {
     @InjectModel(ParkSlotModelName)
     private parkSlotModel: Model<ParkSlotDocument>,
   ) {}
-  
+
   public async create(parkSlot: ParkSlot): Promise<void> {
     await this.parkSlotModel.create(parkSlot);
   }
@@ -23,6 +23,4 @@ export class GetParksSlots implements ParkSlotRepository {
       throw error;
     }
   }
-  
-  
 }
