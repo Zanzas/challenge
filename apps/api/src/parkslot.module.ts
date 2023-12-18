@@ -20,8 +20,8 @@ import { GetParksSlotsService } from './domain/services/getParksSlots.service';
   controllers: [ParkSlotController, GetParksSlotsController], // Ajoutez GetParksSlotsController ici
   providers: [
     { provide: ParkSlotRepository, useClass: GetParksSlots },
-    CreateParkSlot,   
-    GetParksSlotsService
+    CreateParkSlot,
+    GetParksSlotsService,
   ],
 })
 export class ParkSlotModule {}
