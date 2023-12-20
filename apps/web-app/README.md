@@ -23,8 +23,8 @@ Suivez ces étapes pour installer et démarrer les composants de l'application P
 
 ### Lancement de MongoDB
 
-* Assurez-vous que MongoDB est installé sur votre système.
-* Lancez MongoDB selon la méthode appropriée pour votre système d'exploitation.
+- Assurez-vous que MongoDB est installé sur votre système.
+- Lancez MongoDB selon la méthode appropriée pour votre système d'exploitation.
 
 ### Démarrage de l'application Web
 
@@ -33,5 +33,3 @@ Suivez ces étapes pour installer et démarrer les composants de l'application P
 
 2. **Démarrer l'application Web en mode développement** :
    rushx start --dev
-
-

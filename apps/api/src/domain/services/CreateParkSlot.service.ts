@@ -1,15 +1,15 @@
 import { Inject } from '@nestjs/common';
-import { CreateParkDTO } from 'src/dto/CreatePark.dto';
+import { createParkDTO } from 'src/dto/createPark.dto';
 import { ParkSlot } from 'src/domain/entities/ParkSlot';
 import { ParkSlotRepository } from 'src/domain/interface/ParkSlotRepository.interface';
 
-export class CreateParkSlot {
+export class createParkSlot {
   public constructor(
     @Inject(ParkSlotRepository)
     private parkSlotRepository: ParkSlotRepository,
   ) {}
 
-  public async handle(payload: CreateParkDTO): Promise<void> {
+  public async handle(payload: createParkDTO): Promise<void> {
     const slot = ParkSlot.createByUser(payload);
 
     await this.parkSlotRepository.create(slot);

@@ -16,7 +16,7 @@ const FilterComponent = () => {
 
   return (
     <div className="container">
-      <h2 className="title">Mes filtres</h2>
+      <h2 className="title">Rechercher un utilisateur</h2>
       <div className="item">
         <img src={iconLocation} alt="Location" className="icon" />
         <InputComponent
@@ -25,34 +25,6 @@ const FilterComponent = () => {
           onChange={(value) => setAddress(value)}
         />
       </div>
-
-      <div className="item">
-        <img src={iconCalendar} alt="Calendar" className="icon" />
-        <InputComponent
-          value={startDate}
-          type="date"
-          onChange={(value) => setStartDate(value)}
-        />
-      </div>
-
-      <div className="item">
-        <img src={iconCalendar} alt="Calendar" className="icon" />
-        <InputComponent
-          value={endDate}
-          type="date"
-          onChange={(value) => setEndDate(value)}
-        />
-      </div>
-
-      <div className="item">
-        <img src={iconPrice} alt="Price" className="icon" />
-        <InputComponent
-          value={price}
-          type="number"
-          onChange={(value) => setPrice(value)}
-        />
-      </div>
-
       <ButtonComponent text="Rechercher" />
     </div>
   );

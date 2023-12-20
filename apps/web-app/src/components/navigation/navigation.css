@@ -18,3 +18,8 @@
 .button-wrapper {
   padding: 0 1.5rem;
 }
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
