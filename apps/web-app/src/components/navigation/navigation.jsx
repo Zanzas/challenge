@@ -2,7 +2,7 @@ import parkzenIcon from "../../assets/parkzenIcon.png";
 import "./navigation.css";
 
 import AddComponent from "../add/add";
-import Login from "../users/login/login";
+import Profil from "../users/profil";
 
 function NavigationComponent() {
   return (
@@ -12,7 +12,7 @@ function NavigationComponent() {
         <AddComponent />
       </div>
       <div className="button-wrapper">
-        <Login />
+        <Profil />
       </div>
       
 
