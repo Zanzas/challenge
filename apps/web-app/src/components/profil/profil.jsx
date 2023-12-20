@@ -10,15 +10,15 @@ const Profil = () => {
 
   return (
     <div>
-      <ButtonComponent
-        text="Mon Profil"
-        onClick={() => setModalIsOpen(true)}
-      />
+      <ButtonComponent text="Mon Profil" onClick={() => setModalIsOpen(true)} />
 
       <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)}>
         <div className="containerBody">
           <div className="listingContainerComponent">
-            <ListingContainerComponent className="listingContainerComponent" />
+            <ListingContainerComponent
+              className="listingContainerComponent"
+              buttonText="Supprimé"
+            />
           </div>
         </div>
       </Modal>

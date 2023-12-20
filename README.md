@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# ParkZen
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Bienvenue sur le projet ParkZen, un site web innovant développé dans le cadre du challenge stack de l'ESGI. Créé par Enguéran Raout et Thomas Ribeiro, étudiants en 4ème année d'Informatique et Web (4IW) à l'ESGI, ParkZen vise à révolutionner la manière dont nous louons et proposons des places de parking.
 
-In the project directory, you can run:
+ParkZen est une plateforme front-end et back-end permettant aux utilisateurs de louer ou de mettre en location des places de parking de manière simple et intuitive. Que vous cherchiez un parking pour quelques heures ou que vous disposiez d'un espace à partager, ParkZen est la solution idéale.
 
-### `npm start`
+## Installation et démarrage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Suivez ces étapes pour installer et démarrer les composants de l'application ParkZen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Démarrage de l'API
 
-### `npm test`
+1. **Naviguer dans le dossier de l'API** :
+   cd apps/api
+2. **Installer les dépendances** :
+   rush install
+3. **Mettre à jour les dépendances** :
+   rush update
+4. **Démarrer l'API** :
+   rushx start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Lancement de MongoDB
 
-### `npm run build`
+- Assurez-vous que MongoDB est installé sur votre système.
+- Lancez MongoDB selon la méthode appropriée pour votre système d'exploitation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Démarrage de l'application Web
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Naviguer dans le dossier de l'application Web** :
+   cd apps/web-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Démarrer l'application Web en mode développement** :
+   rushx start --dev

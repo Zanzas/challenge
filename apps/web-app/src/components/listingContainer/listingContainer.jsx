@@ -3,7 +3,7 @@ import ListingItemComponent from "../listingItem/listingItem";
 import "./linstingContainer.css";
 import { getParks } from "../../services/getParksService";
 
-const ListingContainerComponent = () => {
+const ListingContainerComponent = ({ buttonText = "Louer" }) => {
   const [parks, setParks] = useState([]);
 
   useEffect(() => {
@@ -12,10 +12,9 @@ const ListingContainerComponent = () => {
         const data = await getParks();
         setParks(data);
       } catch (error) {
-        console.error("Erreur lors du chargement des parcs:", error);
+        console.error("Erreur lors du chargement des parks:", error);
       }
     };
-
     fetchParks();
   }, []);
 
@@ -28,6 +27,7 @@ const ListingContainerComponent = () => {
           startDate={park.startDate}
           endDate={park.endDate}
           price={park.price}
+          buttonText={buttonText}
         />
       ))}
     </div>
